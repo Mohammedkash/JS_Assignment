@@ -15,16 +15,10 @@ function filterByBrodcaster() {
     for (table of tables) {
         let rows = document.querySelectorAll("tbody tr");
         doFilter(rows, 2, word);
-        check();
+     
     }
 }
-function check() {
-    var val = document.getElementById('select_broadcasters').value;
-    if (val == 'beIN' || val == 'NBA TV' || val == 'NBA League Pass') {
-    } else {
-        window.location.reload();
-    }
-}
+
 
 
 function doFilter(rows, column, word) {
